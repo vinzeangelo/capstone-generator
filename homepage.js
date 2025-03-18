@@ -74,5 +74,5 @@ const ideas = {
   }
   function logoutUser() {
     localStorage.removeItem("isValid")
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
