@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capstone Idea Generator</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Developers</a></li>
+            <li><a href="">Missyou</a></li>
+        </ul>
+    </nav>
+    <main>Homepage</main>
+
+  <div class="container">
+    <header>
+      <h1>Capstone Idea Generator</h1>
+    </header>
+
+    <div class="filters">
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="web">Web Development</option>
+        <option value="mobile">Mobile Apps</option>
+        <option value="ai">Artificial Intelligence</option>
+        <option value="iot">IoT</option>
+        <option value="security">Cybersecurity</option>
+      </select>
+
+      <label>Difficulty:</label>
+      <div class="difficulty">
+        <button class="active" onclick="setDifficulty('all')">All</button>
+        <button onclick="setDifficulty('beginner')">Beginner</button>
+        <button onclick="setDifficulty('intermediate')">Intermediate</button>
+        <button onclick="setDifficulty('advanced')">Advanced</button>
+      </div>
+
+      <button onclick="generateIdea()" id="genidea">Generate Idea</button> <br>
+      <button onclick="logoutUser()" id="signout">Sign out </button>
+    </div>
+
+    <div class="results">
+      <h2>Generated Idea:</h2>
+
+      <p id="idea">Click the button to generate an idea!</p>
+    </div>
+  </div>
+
+  <script src="homepage.js"></script>
+
+</body>
+
+</html>
